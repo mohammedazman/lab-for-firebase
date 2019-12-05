@@ -1,0 +1,98 @@
+[debug] [2019-11-24T22:13:04.295Z] ----------------------------------------------------------------------
+[debug] [2019-11-24T22:13:04.299Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\MOHAMMD-AZMAN\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve --only hosting
+[debug] [2019-11-24T22:13:04.299Z] CLI Version:   7.8.1
+[debug] [2019-11-24T22:13:04.299Z] Platform:      win32
+[debug] [2019-11-24T22:13:04.299Z] Node Version:  v10.16.3
+[debug] [2019-11-24T22:13:04.301Z] Time:          Mon Nov 25 2019 01:13:04 GMT+0300 (Arabian Standard Time)
+[debug] [2019-11-24T22:13:04.301Z] ----------------------------------------------------------------------
+[debug] [2019-11-24T22:13:04.301Z] 
+[debug] [2019-11-24T22:13:04.328Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-11-24T22:13:04.331Z] > authorizing via signed-in user
+[debug] [2019-11-24T22:13:04.332Z] [iam] checking project friendlyeats-ccee8 for permissions ["firebase.projects.get"]
+[debug] [2019-11-24T22:13:04.336Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-11-24T22:13:04.336Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-11-24T22:13:05.240Z] <<< HTTP RESPONSE 200
+[debug] [2019-11-24T22:13:05.359Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/friendlyeats-ccee8:testIamPermissions  
+
+[debug] [2019-11-24T22:13:07.123Z] <<< HTTP RESPONSE 200
+[debug] [2019-11-24T22:13:07.126Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/friendlyeats-ccee8  
+ 
+[debug] [2019-11-24T22:13:07.834Z] <<< HTTP RESPONSE 200
+[debug] [2019-11-24T22:13:07.836Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/friendlyeats-ccee8/webApps/-/config  
+ 
+[debug] [2019-11-24T22:13:08.818Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: ./
+[info] +  hosting: Local server: http://localhost:5000
+[debug] [2019-11-24T22:17:07.342Z] Error: getaddrinfo ENOTFOUND www.gstatic.com www.gstatic.com:443
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:56:26)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2019-11-24T22:17:07.346Z] Error: getaddrinfo ENOTFOUND www.gstatic.com www.gstatic.com:443
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:56:26)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2019-11-24T22:17:07.351Z] Error: getaddrinfo ENOTFOUND www.gstatic.com www.gstatic.com:443
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:56:26)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2019-11-24T22:17:07.354Z] Error: getaddrinfo ENOTFOUND www.gstatic.com www.gstatic.com:443
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:56:26)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2019-11-24T22:18:01.934Z] ----------------------------------------------------------------------
+[debug] [2019-11-24T22:18:01.938Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\MOHAMMD-AZMAN\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve --only hosting
+[debug] [2019-11-24T22:18:01.939Z] CLI Version:   7.8.1
+[debug] [2019-11-24T22:18:01.939Z] Platform:      win32
+[debug] [2019-11-24T22:18:01.939Z] Node Version:  v10.16.3
+[debug] [2019-11-24T22:18:01.941Z] Time:          Mon Nov 25 2019 01:18:01 GMT+0300 (Arabian Standard Time)
+[debug] [2019-11-24T22:18:01.941Z] ----------------------------------------------------------------------
+[debug] [2019-11-24T22:18:01.941Z] 
+[debug] [2019-11-24T22:18:01.961Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-11-24T22:18:01.963Z] > authorizing via signed-in user
+[debug] [2019-11-24T22:18:01.963Z] [iam] checking project friendlyeats-ccee8 for permissions ["firebase.projects.get"]
+[debug] [2019-11-24T22:18:01.969Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/friendlyeats-ccee8:testIamPermissions  
+
+[debug] [2019-11-24T22:18:35.056Z] Error: connect ETIMEDOUT 216.58.198.42:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1106:14)
+[error] 
+[error] Error: Server Error. connect ETIMEDOUT 216.58.198.42:443
+[debug] [2019-11-24T22:33:05.050Z] ----------------------------------------------------------------------
+[debug] [2019-11-24T22:33:05.054Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\MOHAMMD-AZMAN\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve --only hosting
+[debug] [2019-11-24T22:33:05.054Z] CLI Version:   7.8.1
+[debug] [2019-11-24T22:33:05.054Z] Platform:      win32
+[debug] [2019-11-24T22:33:05.054Z] Node Version:  v10.16.3
+[debug] [2019-11-24T22:33:05.056Z] Time:          Mon Nov 25 2019 01:33:05 GMT+0300 (Arabian Standard Time)
+[debug] [2019-11-24T22:33:05.056Z] ----------------------------------------------------------------------
+[debug] [2019-11-24T22:33:05.056Z] 
+[debug] [2019-11-24T22:33:05.074Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-11-24T22:33:05.076Z] > authorizing via signed-in user
+[debug] [2019-11-24T22:33:05.077Z] [iam] checking project friendlyeats-ccee8 for permissions ["firebase.projects.get"]
+[debug] [2019-11-24T22:33:05.080Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/friendlyeats-ccee8:testIamPermissions  
+
+[debug] [2019-11-24T22:33:05.768Z] Error: getaddrinfo EAI_AGAIN cloudresourcemanager.googleapis.com cloudresourcemanager.googleapis.com:443
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:56:26)
+[error] 
+[error] Error: Server Error. getaddrinfo EAI_AGAIN cloudresourcemanager.googleapis.com cloudresourcemanager.googleapis.com:443
+[debug] [2019-11-24T22:33:15.528Z] ----------------------------------------------------------------------
+[debug] [2019-11-24T22:33:15.532Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\MOHAMMD-AZMAN\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve --only hosting
+[debug] [2019-11-24T22:33:15.533Z] CLI Version:   7.8.1
+[debug] [2019-11-24T22:33:15.533Z] Platform:      win32
+[debug] [2019-11-24T22:33:15.533Z] Node Version:  v10.16.3
+[debug] [2019-11-24T22:33:15.534Z] Time:          Mon Nov 25 2019 01:33:15 GMT+0300 (Arabian Standard Time)
+[debug] [2019-11-24T22:33:15.535Z] ----------------------------------------------------------------------
+[debug] [2019-11-24T22:33:15.535Z] 
+[debug] [2019-11-24T22:33:15.554Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-11-24T22:33:15.555Z] > authorizing via signed-in user
+[debug] [2019-11-24T22:33:15.555Z] [iam] checking project friendlyeats-ccee8 for permissions ["firebase.projects.get"]
+[debug] [2019-11-24T22:33:15.559Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/friendlyeats-ccee8:testIamPermissions  
+
+[debug] [2019-11-24T22:33:16.855Z] <<< HTTP RESPONSE 200
+[debug] [2019-11-24T22:33:16.861Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/friendlyeats-ccee8  
+ 
+[debug] [2019-11-24T22:33:17.622Z] <<< HTTP RESPONSE 200
+[debug] [2019-11-24T22:33:17.626Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/friendlyeats-ccee8/webApps/-/config  
+ 
+[debug] [2019-11-24T22:33:18.551Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: ./
+[info] +  hosting: Local server: http://localhost:5000
