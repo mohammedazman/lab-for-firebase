@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-app.js"></script>
+<link rel="stylesheet" href="bootstrap.min.css">
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-firestore.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-auth.js"></script>
+
+
+  </head>
+  <body>
+
+
+  <section class="container">
+    <fieldset class="scheduler-border border p-2">
+    <legend class="scheduler-border w-auto"> Log In</legend>
+    <label for="userEmail">UserEmail</lable>
+  <input   id="userEmail" class="form-control">
+  <label for="password">UserEmail</lable>
+  <input   id="password" class="form-control">
+
+    <button type="button" name="button" id="sign_in" class="btn btn-primary">Log IN</button>
+    <p id="message"></p>
+  </fieldset>
+  </section>
+  <body>
+    <script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyA-iF4Wnflt-Wm4LUcu05kg_0LmqzNYwqg",
+    authDomain: "codingacademy-a9bca.firebaseapp.com",
+    databaseURL: "https://codingacademy-a9bca.firebaseio.com",
+    projectId: "codingacademy-a9bca",
+    storageBucket: "codingacademy-a9bca.appspot.com",
+    messagingSenderId: "540192190857",
+    appId: "1:540192190857:web:f3f46f1d92d6de03347158",
+    measurementId: "G-KVQ1G1PGMG"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+
+
+  var userEmail= document.getElementById('userEmail');
+  var password= document.getElementById('password');
+
+  var sign_in= document.getElementById('sign_in');
+  var msgs=document.getElementById('message');
+  sign_in.addEventListener("click",function(){
+  firebase.auth().signInWithEmailAndPassword(userEmail.value, password.value).then(function (user) {
+      msgs.innerText="Sign in sucssfuly";
+
+
+      userEmail.value="";
+      password.value="";
+      location.replace("products.html");
+  }).catch(function (msg) {
+    console.log(msg.message);
+     msgs.innerText = msg.message;
+   });
+  });
+
+
+
+</script>
+  </body>
+</html>

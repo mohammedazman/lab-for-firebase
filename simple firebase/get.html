@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-firestore.js"></script>
+
+
+  </head>
+  <ul id="show">
+
+  </ul>
+  <body>
+    <script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyA-iF4Wnflt-Wm4LUcu05kg_0LmqzNYwqg",
+    authDomain: "codingacademy-a9bca.firebaseapp.com",
+    databaseURL: "https://codingacademy-a9bca.firebaseio.com",
+    projectId: "codingacademy-a9bca",
+    storageBucket: "codingacademy-a9bca.appspot.com",
+    messagingSenderId: "540192190857",
+    appId: "1:540192190857:web:f3f46f1d92d6de03347158",
+    measurementId: "G-KVQ1G1PGMG"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+  var dbObject=firebase.firestore();
+  var allDev=document.getElementById('show');
+  dbObject.collection('students').where("name","==","dfg").get().then(function (rows) {
+    rows.forEach(function (row) {
+      var d= row.data();
+            allDev.innerHTML+="<li>"+d.name+"-"+d.phone+" </li>";
+
+    })
+  })
+
+
+
+</script>
+  </body>
+</html>

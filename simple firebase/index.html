@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-app.js"></script>
+<link rel="stylesheet" href="bootstrap.min.css">
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-firestore.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-auth.js"></script>
+
+
+  </head>
+  <body class="bg-light">
+
+
+  <section class="container bg-white text-center mt-5 col-md-6">
+    <fieldset class="scheduler-border border p-2 ">
+    <legend class="scheduler-border w-auto"> Sign In</legend>
+    <div class="form-group row">
+     <label for="userEmail" class="col-md-2">userEmail:</label>
+     <input type="text" class="form-control col-md-8" id="userEmail" name="userEmail">
+   </div>
+   <div class="form-group row">
+    <label for="password" class="col-md-2">password:</label>
+    <input type="password" class="form-control col-md-8" id="password" name="password">
+  </div>
+    <div class="form-group">
+        <button type="button" name="button" id="sign_in" class="btn btn-primary">Sign IN</button>
+    </div>
+
+    <h3 id="message" class=""></h3>
+  </fieldset>
+  </section>
+  <body>
+    <script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyA-iF4Wnflt-Wm4LUcu05kg_0LmqzNYwqg",
+    authDomain: "codingacademy-a9bca.firebaseapp.com",
+    databaseURL: "https://codingacademy-a9bca.firebaseio.com",
+    projectId: "codingacademy-a9bca",
+    storageBucket: "codingacademy-a9bca.appspot.com",
+    messagingSenderId: "540192190857",
+    appId: "1:540192190857:web:f3f46f1d92d6de03347158",
+    measurementId: "G-KVQ1G1PGMG"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+
+
+  var userEmail= document.getElementById('userEmail');
+  var password= document.getElementById('password');
+
+  var sign_in= document.getElementById('sign_in');
+  var msgs=document.getElementById('message');
+  sign_in.addEventListener("click",function(){
+    msgs.innerText="waiting please ...";
+
+    msgs.className="alert alert-dark";
+  firebase.auth().createUserWithEmailAndPassword(userEmail.value, password.value).then(function (user) {
+      msgs.innerText="Sign in sucssfuly";
+
+      msgs.className="alert alert-success"
+      userEmail.value="";
+      password.value="";
+  }).catch(function (msg) {
+    console.log(msg.message);
+     msgs.innerText = msg.message;
+     msgs.className="alert alert-danger"
+   });
+  });
+
+
+
+</script>
+  </body>
+</html>
